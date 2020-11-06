@@ -29,6 +29,8 @@
         <div class = "container-contact">
 
 
+
+
             <header id="main-contact">
                 <h1>hey, you! what's up?</h1>
             </header>
@@ -36,7 +38,26 @@
                 <p><br>Thank you so much for taking the time to check out my portfolio! Please fill out the form below if you would like to be in contact with me. I would be happy to share more information about myself, my college experience, and recipes if you’re interested! I look forward to being in touch and hope you are doing well!</p>
             </div>
 
+
+            <form action="https://formspree.io/f/mrgokdwd" id = "form" method="POST">
+                <fieldset>
+
+                <label for="fname_id">first name</label>
+                <input type="text" placeholder="enter your first name..." id = "fname_id" name="fname" required>
+
+                <label for="lname_id">last name</label>
+                <input type="text" placeholder="enter your last name..." id = "lname_id" name="lname" required>
             
+                <label for="email_id">email</label>
+                <input type="email" placeholder="enter your email..." id = "email_id" name="email" required><br><br>
+            
+                <label for="message">leave a message</label>
+                <textarea placeholder="enter your message..." id = "msg" name="mesg" required></textarea><br>
+            
+                <input type="submit" value = "submit, ttyl!">
+
+                </fieldset>
+            </form>
 
 
 
