@@ -8,7 +8,7 @@ body{
   margin: 0;
   padding: 0;
   background-image: url(../images/indexbackground.jpg);
-
+  font-family: "Lato";
 }
 
 h1{
@@ -63,7 +63,6 @@ nav .current{
   text-align: left;
   margin-top: -100px;
   padding-left: 20px;
-  font: sans-serif;
 }
 
 
@@ -304,11 +303,22 @@ footer p{
 }
 
 /*photos section*/
-.container-photos{
+
+.flex-container {
   display: flex;
   flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.photos{
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  min-height: 500px;
+  overflow: hidden;
+  margin: 10px 10px 10px 10px;
 }
 
 #main-photos{
@@ -322,20 +332,14 @@ footer p{
   height: 150px;
   width: 100%;
 }
-.photos{
-  text-align: center;
+.photos > img{
+  border: 10px;
+  margin: 10px;
+  width: 400px;
 }
 
-.photos img{
-  max-width: 90%;
-  margin: 10px 10px 10px 10px;
-  border: 3px solid #000000;
-  vertical-align: middle;
-
-
-}
 .photos img:hover{
-  border: 3px solid rgb(247, 18, 189);
+  filter: grayscale(100%);
 }
 
 /*contact section*/
@@ -397,3 +401,312 @@ input[type=submit]{
 input[type=submit]:hover{
   background-color: rgb(153, 0, 115);
 }
+
+
+
+/*For tablet screens*/
+@media only screen and (min-width:768px) {
+  nav{
+    padding: 20px 20px;
+  }
+
+
+  nav ul{
+    list-style-type: none;
+    text-align: left;
+}
+nav li{
+  display: inline-block;
+  padding-left: 35px;
+  font-size: 18px;
+}
+
+.Lauren{
+  text-align: right;
+  margin-top: -40px;
+  padding-right: 35px;
+  letter-spacing: .2em;
+
+}
+
+.Lauren p{
+  transition: 2s ease-in;
+  font-weight: bolder;
+  font-size: 25px;
+  text-shadow: 1px 1px rgb(247, 18, 189);
+}
+#main{
+  margin-top: 20px;
+  height: 200px;
+}
+#main-recipes{
+  margin-top: 20px;
+  height: 200px;
+  background-position: 100% 100%;
+}
+footer{
+  font-size: .8vw;
+}
+#linkedin{
+  padding-right: 35px;
+}
+#resume{
+  padding-left: 35px;
+}
+h2{
+  font-size: 3.5vw;
+  padding-bottom: 10px;
+}
+.brussel-sprouts-image{
+  width: 80%;
+}
+.potatoes-image{
+  width: 80%;
+}
+.eggplant-image{
+  width: 80%;
+}
+.tuna-image{
+  width: 80%;
+}
+.brussel-sprouts-image img{
+  max-height: 500px;
+  width: 70%;
+}
+.potatoes-image img{
+  max-height: 500px;
+  width: 70%;
+}
+.eggplant-image img{
+  max-height: 500px;
+  width: 70%;
+}
+.tuna-image img{
+  max-height: 500px;
+  width: 70%;
+}
+#main-photos{
+  margin-top: 20px;
+  height: 200px;
+}
+.photos img{
+  max-width: 42%;
+  height: 400px;
+}
+#main-contact{
+  margin-top: 20px;
+  height: 200px;
+}
+  
+}
+
+
+
+/*For large screens*/
+@media only screen and (min-width:1020px) {
+  .Lauren{
+    text-align: right;
+    margin-top: -40px;
+    padding-right: 35px;
+    letter-spacing: .2em;
+  
+  }
+  .Lauren p{
+    transition: 2s ease-in;
+    font-weight: bolder;
+    font-size: 25px;
+    text-shadow: 1px 1px rgb(247, 18, 189);
+  }
+
+  footer{
+    grid-column: 1/span 4;
+  }
+  footer p{
+    font-size: 4vw;
+  }
+  #linkedin{
+    font-size: 2.5vw;
+  }
+  #facebook{
+    font-size: 2.5vw;
+  }
+  #resume{
+    font-size: 2.5vw;
+  }
+  
+  /*about section*/
+  #main{
+    margin-top: 20px;
+    height: 300px;
+    grid-column: 1 / span 3;
+    grid-row: 1/3;
+  }
+
+  .container-index{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    width: 100%;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .selfie{
+    grid-column: 1 / span 2;
+    grid-row: 3/4;
+    padding: 20px 20px;
+  }
+
+  .info{
+    grid-column: 3 / span 1;
+    grid-row: 3/4;
+    padding-right: 15%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    font-size: 22px;
+  }
+  .selfie img{
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+    /*recipes section*/
+
+    .container-recipes{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto auto auto auto 100px;
+      width: 100%;
+    }
+
+    #main-recipes{
+      margin-top: 20px;
+      height: 300px;
+      grid-column: 1 / span 4;
+      grid-row: 1/3;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+
+    .brussel-sprouts{
+      color: rgb(247, 18, 189);
+      grid-column: 1/2;
+      grid-row: 3/4;
+      margin-bottom: auto;
+      text-align: center;
+    }
+    .brussel-sprouts-image{
+      margin-left: auto;
+      margin-right: auto;
+      grid-column: 1/2;
+      grid-row: 4/5;
+      width: 85%;
+      text-align: center;
+    }
+    .brussel-sprouts-image img{
+      width: 400px;
+      height: 500px;
+      align-items: center;
+      border: 3px solid black;
+    }
+
+    
+    
+    
+    .potatoes{
+      color: rgb(247, 18, 189);
+      grid-column: 2/3;
+      grid-row: 3/4;
+      margin-bottom: auto;
+    }
+    .potatoes-image{
+      margin-left: auto;
+      margin-right: auto;
+      grid-column: 2/3;
+      grid-row: 4/5;
+      width: 85%;
+      text-align: center;
+    }
+    .potatoes-image img{
+      width: 400px;
+      height: 500px;
+      align-items: center;
+      border: 3px solid black;
+    }
+    
+    
+    
+    .eggplant{
+      color: rgb(247, 18, 189);
+      grid-row: 5/6;
+      grid-column: 1/2;
+      margin-bottom: auto;
+    }
+    .eggplant-image{
+      margin-left: auto;
+      margin-right: auto;
+      grid-row: 6/7;
+      grid-column: 1/2;
+      width: 85%;
+      text-align: center;
+    }
+    .eggplant-image img{
+      width: 400px;
+      height: 500px;
+      align-items: center;
+      border: 3px solid black;
+    }
+    
+    
+    .tuna{
+      color: rgb(247, 18, 189);
+      grid-row: 5/6;
+      grid-column: 2/3;
+      margin-bottom: auto;
+    }
+    .tuna-image{
+      margin-left: auto;
+      margin-right: auto;
+      grid-row: 6/7;
+      grid-column: 2/3;
+      width: 85%;
+      text-align: center;
+    }
+    .tuna-image img{
+      width: 400px;
+      height: 500px;
+      align-items: center;
+      border: 3px solid black;
+    }
+
+    /*photos section*/
+
+    #main-photos{
+      margin-top: 20px;
+      height: 300px;
+    }
+    .photos img{
+      max-width: 30%;
+      height: 500px;
+    }
+
+  /*contact section*/
+    #main-contact{
+      margin-top: 20px;
+      height: 300px;
+    }
+
+
+}
+
+
+@media screen and (prefers-reduced-motion:reduce) {
+  .Lauren p{
+    transition: none;
+    -webkit-animation: none; 
+    animation: none;
+  }
+}
+
+
