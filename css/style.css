@@ -34,7 +34,7 @@ nav li{
 }
 
 nav a{
-  color: rgb(247, 18, 189);
+  color: rgb(148, 14, 115);
   text-decoration: none;
 }
 
@@ -145,8 +145,8 @@ footer p{
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../images/bighouse.jpg);
-  color: #FFFFFF;
-  text-shadow: 2px 2px rgb(247, 18, 189);
+  color:  rgb(247, 18, 189);
+  text-shadow: 3px 3px #FFFFFF;
   height: 175px;
   width: 100%;
  
@@ -351,8 +351,8 @@ footer p{
   background-position: center;
   background-image: url(../images/bighouse.jpg);
   background-repeat: no-repeat;
-  color: #FFFFFF;
-  text-shadow: 2px 2px rgb(247, 18, 189);
+  color:  rgb(247, 18, 189);
+  text-shadow: 3px 3px #FFFFFF;
   height: 175px;
   width: 100%;
  
@@ -390,7 +390,7 @@ input:focus{
 }
 
 input[type=submit]{
-  background-color: rgb(247, 18, 189);
+  background-color: rgb(153, 0, 115);
   padding: 12px 20px;
   color: white;
   text-shadow: 1px 1px #000000;
@@ -399,7 +399,7 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
-  background-color: rgb(153, 0, 115);
+  background-color: rgb(247, 18, 189);
 }
 
 
